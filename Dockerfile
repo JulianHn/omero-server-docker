@@ -8,7 +8,8 @@ RUN mkdir /opt/setup
 WORKDIR /opt/setup
 ADD playbook.yml requirements.yml /opt/setup/
 
-RUN yum -y install epel-release \
+RUN yum -y update \
+    && yum -y install epel-release \
     && yum -y install ansible sudo ca-certificates \
     && ansible-galaxy install -p /opt/setup/roles -r requirements.yml \
     && yum -y clean all \
