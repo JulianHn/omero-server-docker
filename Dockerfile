@@ -1,4 +1,4 @@
-FROM julianhn/cent-test:centos7@sha256:dead07b4d8ed7e29e98de0f4504d87e8880d4347859d839686a31da35a3b532f
+FROM julianhn/cent-test:centos7@sha256:91eb1aec2c67c016d3c8ef72db6cfc2246dcf096c70b2d95b7b8218d66cd1a8f
 LABEL maintainer="ome-devel@lists.openmicroscopy.org.uk"
 LABEL org.opencontainers.image.created="unknown"
 LABEL org.opencontainers.image.revision="unknown"
